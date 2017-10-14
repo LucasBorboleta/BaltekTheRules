@@ -21,7 +21,7 @@ During year 2015, the rules of the game have been tested within the limited circ
 
 Such tests were performed using handcrafted material (paper sheet and wooden pieces). See also the [pictures](http://lucas.borboleta.blog.free.fr/public/Baltek/2016-01--Baltek-Prototype-2/Diaporama.htm) from the blog [Lucas Borboleta](http://lucas.borboleta.blog.free.fr)
 
-During year 2016, an implementation using HTML and JavaScript was started. Such implementation is hosted in another project, named **baltek-the-program**. 
+During year 2016, an implementation using HTML and JavaScript was started. Such implementation is hosted in another project, named **[baltek-the-program](https://github.com/LucasBorboleta/baltek-the-program)**. 
 
 During year 2017, the rules have been translated in English, Esperanto. The Portuguese translation is on going.
 

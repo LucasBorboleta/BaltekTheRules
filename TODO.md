@@ -10,5 +10,3 @@ This document collects the milestones for the **baltek-the-rules** project and t
 # Tasks
 
 1. Translate rules in Portuguese.
-
-   ​

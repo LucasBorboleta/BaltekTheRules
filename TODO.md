@@ -9,4 +9,5 @@ This document collects the milestones for the **baltek-the-rules** project and t
 
 # Tasks
 
-1. Check the Portuguese translation of the rules.
+1. Setup the project for accepting contribution.
+2. Call for checking the various translations.

@@ -23,7 +23,7 @@ Such tests were performed using handcrafted material (paper sheet and wooden pie
 
 During year 2016, an implementation using HTML and JavaScript was started. Such implementation is hosted in another project, named **[baltek-the-program](https://github.com/LucasBorboleta/baltek-the-program)**. 
 
-During year 2017, the rules have been translated in English, Esperanto. The Portuguese translation is on going.
+During year 2017, the rules have been translated in English, Esperanto and  Portuguese.
 
 The **separation** of **text rules** and **software implementation** aims at encouraging people either to play using handcrafted material or to develop their own program.
 

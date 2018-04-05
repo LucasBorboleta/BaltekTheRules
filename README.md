@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project, named **baltek-the-rules**,  describes the **rules** of the **BALTEK** board game.
+This project, named **baltek-the-rules**, describes the **rules** of the **BALTEK** board game.
 
 BALTEK is a turn-based board game, inspired from **football**. Here are its principles:
 
@@ -25,10 +25,25 @@ Such tests were performed using handcrafted material (paper sheet and wooden pie
 
 During year 2016, an implementation using HTML and JavaScript was started. Such implementation is hosted in another project, named **[baltek-the-program](https://github.com/LucasBorboleta/baltek-the-program)**.
 
-During year 2017, the rules have been translated in English, Esperanto and  Portuguese.
+During year 2017, the rules have been translated in English, Esperanto and Portuguese.
 
 The **separation** of **text rules** and **software implementation** aims at encouraging people either to play using handcrafted material or to develop their own program.
 
 ## License
 
-BALTEK (_the rules_) is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+BALTEK (_the rules_) is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+
+## Credits
+
+### [normalize.css](http://github.com/necolas/normalize.css/)
+
+Copyright Nicolas Gallagher and Jonathan Neal.
+
+MIT License.
+
+### [w3.css](http://www.w3schools.com/w3css/)
+
+4.04 Apr 2017 by Jan Egil and Borge Refsnes.
+
+w3.css is free to use. No license is necessary.
+

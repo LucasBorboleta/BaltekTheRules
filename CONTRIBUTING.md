@@ -2,8 +2,6 @@
 
 👍🎉 Thanks for taking the time to contribute! 🎉👍
 
-[TOC]
-
 
 ## What languages can you use
 

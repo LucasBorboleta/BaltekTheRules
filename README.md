@@ -1,6 +1,5 @@
 # README
 
-[TOC]
 
 ## Introduction
 

@@ -33,13 +33,16 @@ The **separation** of **text rules** and **software implementation** aims at enc
 
 ## Contributing
 
-Dear contributor, please read the following documents located in the [docs](./docs) folder:
+Dear contributor, please read the following documents :
 
-* [CODE-OF-CONDUCT](./docs/CODE-OF-CONDUCT.md): about expected behavior of contributors.
-* [CONTRIBUTING](./docs/CONTRIBUTING.md): how to contribute and on which aspects.
-* [DESIGN](./docs/DESIGN.md): about file organization, conventions and design.
+* [CODE-OF-CONDUCT](./CODE-OF-CONDUCT.md): about expected behavior of contributors.
+* [CONTRIBUTING](./CONTRIBUTING.md): how to contribute and on which aspects.
 
 ## License
+
+[![Creative Commons License](./packages/creative-commons/pictures/CC-BY-SA.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+
+Copyright (C) 2017-2018  [Lucas Borboleta](mailto:lucas.borboleta@free.fr) and  the [Baltekians](./CONTRIBUTORS.txt).
 
 BALTEK (_the rules_) is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 

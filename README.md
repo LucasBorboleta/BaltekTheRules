@@ -1,5 +1,7 @@
 # README
 
+[TOC]
+
 ## Introduction
 
 This project, named **baltek-the-rules**, describes the **rules** of the **BALTEK** board game.
@@ -28,6 +30,14 @@ During year 2016, an implementation using HTML and JavaScript was started. Such 
 During year 2017, the rules have been translated in English, Esperanto and Portuguese.
 
 The **separation** of **text rules** and **software implementation** aims at encouraging people either to play using handcrafted material or to develop their own program.
+
+## Contributing
+
+Dear contributor, please read the following documents located in the [docs](./docs) folder:
+
+* [CODE-OF-CONDUCT](./docs/CODE-OF-CONDUCT.md): about expected behavior of contributors.
+* [CONTRIBUTING](./docs/CONTRIBUTING.md): how to contribute and on which aspects.
+* [DESIGN](./docs/DESIGN.md): about file organization, conventions and design.
 
 ## License
 

@@ -1,15 +1,15 @@
-# Contributing to baltek-the-rules
+# Contributing to baltek-the-rules 
 
-👍🎉 Thanks for taking the time to contribute! 🎉👍
+👍🎉 Thanks for taking the time to contribute! 🎉👍 
 
 
 ## What languages can you use
 
-In this project, you have to use  *English* for exchanging, coding and documenting. 
+In this project, you have to use  English for exchanging, coding and documenting. 
 
-*Esperanto*, *French*, *Portuguese* and others languages are only used for translating the rules.
+Esperanto, French and Portuguese have been used only for translating the rules.
 
-All languages are welcome for translating the rules.
+All other languages are welcome for translating the rules.
 
 ## What can you contribute
 
@@ -38,19 +38,18 @@ You can exchange by:
 * If you intent to propose code, then:
   * Learn how to use  [GitHub](https://github.com) in some sandbox project.
   * Read all sections of this document about files, testing...
-* Read the [CODE-OF-CONDUCT](./CODE-OF-CONDUCT.md) document about expected behavior of contributors. A translation in your native language can be found at https://www.contributor-covenant.org.
+* Read the [CODE-OF-CONDUCT](./CODE-OF-CONDUCT.md) document about expected behavior of contributors. Most probably, a translation in your native language can be found at https://www.contributor-covenant.org.
 
 
 ## How do you find and store files
 
 Here is the organization of the files:
 
-* All documentation files (README, LICENSE...) are located at the root of the project. They are named with capitalized letters leading to words joined with `-` but not with `_`. Their extensions are either *.txt* or `.md`.
+* All documentation files (README, LICENSE...) are located at the root of the project. They are named with capitalized letters leading to words joined with `-` but not with `_`. Their extensions are either `.txt` or `.md`.
 * The main files are grouped and stored as packages in the `./packages` folder. The present project is the `baltek-the-rules` package. The other packages correspond to imported projects.
-* Beneath each package root, the following subfolders group the files according to their types: `html`, `css`, `js`, `pictures`. Going deeper, sub-subfolders  might be created if they bring added value.
-* Links between files of the `./packages` folder are always expressed using relative paths.
+* Beneath each package root, the following subfolders group the files according to their types: `html`, `css`, `js`, `pictures`. Going deeper, sub-subfolders might be created if they bring added value.
+* Links between files beneath the `./packages` folder are always expressed using relative paths.
 * At the root of the project, files named `index-en.html`, `index-eo.html`... using a minimal amount of code launches the  `./packages/baltek-the-rules` package.
-* The `LICENSE.txt` stored at the root of the project is also copied at the root of the   `./packages/baltek-the-rules` package.
 
 ## How do you test
 
@@ -69,5 +68,5 @@ The [CONTRIBUTORS.txt](./CONTRIBUTORS.txt) file registers the Baltekians who are
 * People who proposed code, then being integrated.
 * People outside GitHub who get known for their feedbacks as game testers or linguistic correctors.
 
-Developer creating or merging a pull-request, or treating an issue, is responsible for updating the [CONTRIBUTORS.txt](./CONTRIBUTORS.txt) file with involved Baltekians.
+Developer creating or merging a pull-request, or treating an issue, is responsible for updating the [CONTRIBUTORS.txt](./CONTRIBUTORS.txt) file with the names of the involved Baltekians.
 

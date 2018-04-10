@@ -1,5 +1,6 @@
 # README
 
+⚽🏃
 
 ## Introduction
 
@@ -39,11 +40,14 @@ Dear contributor, please read the following documents :
 
 ## License
 
-[![Creative Commons License](./packages/creative-commons/pictures/CC-BY-SA.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+[![Creative Commons License](./packages/creative-commons/pictures/CC-BY-SA.png)](http://creativecommons.org/licenses/by-sa/4.0)
 
-Copyright (C) 2017-2018  [Lucas Borboleta](mailto:lucas.borboleta@free.fr) and  the [Baltekians](./CONTRIBUTORS.txt).
+BALTEK (the rules) describes a turn-based board game, inspired from football. 
+Copyright (C) 2017-2018 Lucas Borboleta ([lucas.borboleta@free.fr](mailto:lucas.borboleta@free.fr)) and Baltekians (see [CONTRIBUTORS.txt](./CONTRIBUTORS.txt) file).
 
-BALTEK (_the rules_) is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit [http://creativecommons.org/licenses/by-sa/4.0](http://creativecommons.org/licenses/by-sa/4.0).
+
+Attribute work to URL [https://github.com/LucasBorboleta/baltek-the-rules](https://github.com/LucasBorboleta/baltek-the-rules).
 
 ## Credits
 

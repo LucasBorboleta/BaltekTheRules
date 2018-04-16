@@ -19,47 +19,40 @@ The name of the game is built using sounds of the words ball (BAL) and technical
 
 The **atmosphere** of the matches is reminiscent of the game of **chess**.
 
+## Usages
+
+- In order to read the rules: open the file [index.html](./index.html) in your web browser.
+
+- In order to play the rules, either:
+
+  - handcraft yourself the game (it is really easy!),
+  - play the HTML5/JavaScript implementation developed in the sister project [baltek-the-program](https://github.com/LucasBorboleta/baltek-the-program).
+
+## License
+
+If you intent to derive or to sell either a text, a product or a software from this work, then read the [LICENSE](./docs/LICENSE.md) document.
+
+Used works are listed in the [CREDITS](./docs/CREDITS.md) document.
+
+## Contributing
+
+Changes regarding either the translations of the rules or the evolution of the rules are welcome; see the  [CONTRIBUTING](./docs/CONTRIBUTING.md) document.
+
+The past an present contributors are listed in the [CONTRIBUTORS](./docs/CONTRIBUTORS.md) document.
+
 ## History
 
 During year 2015, the rules of the game have been tested within the limited circle of my family and office colleagues. The rules have been found balanced and fun.
 
 Such tests were performed using handcrafted material (paper sheet and wooden pieces). See also the [pictures](http://lucas.borboleta.blog.free.fr/public/Baltek/2016-01--Baltek-Prototype-2/Diaporama.htm) from the blog [Lucas Borboleta](http://lucas.borboleta.blog.free.fr)
 
-During year 2016, an implementation using HTML and JavaScript was started. Such implementation is hosted in another project, named **[baltek-the-program](https://github.com/LucasBorboleta/baltek-the-program)**.
+During year 2016, an implementation using HTML and JavaScript was started. Such implementation is hosted in another project, named [baltek-the-program](https://github.com/LucasBorboleta/baltek-the-program).
 
 During year 2017, the rules have been translated in English, Esperanto and Portuguese.
 
-The **separation** of **text rules** and **software implementation** aims at encouraging people either to play using handcrafted material or to develop their own program.
+During year 2018, the project has been prepared for being ready for contributions.
 
-## Contributing
+The **separation** of **text rules** and **software implementation** aims at encouraging people either to play using handcrafted material or to develop their own program
 
-Dear contributor, please read the following documents :
 
-* [CODE-OF-CONDUCT](./CODE-OF-CONDUCT.md): about expected behavior of contributors.
-* [CONTRIBUTING](./CONTRIBUTING.md): how to contribute and on which aspects.
-
-## License
-
-[![Creative Commons License](./packages/creative-commons/pictures/CC-BY-SA.png)](http://creativecommons.org/licenses/by-sa/4.0)
-
-BALTEK (the rules) describes a turn-based board game, inspired from football. 
-Copyright (C) 2017-2018 Lucas Borboleta ([lucas.borboleta@free.fr](mailto:lucas.borboleta@free.fr)) and Baltekians (see [CONTRIBUTORS.txt](./CONTRIBUTORS.txt) file).
-
-This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit [http://creativecommons.org/licenses/by-sa/4.0](http://creativecommons.org/licenses/by-sa/4.0).
-
-Attribute work to URL [https://github.com/LucasBorboleta/baltek-the-rules](https://github.com/LucasBorboleta/baltek-the-rules).
-
-## Credits
-
-### [normalize.css](http://github.com/necolas/normalize.css/)
-
-Copyright Nicolas Gallagher and Jonathan Neal.
-
-MIT License.
-
-### [w3.css](http://www.w3schools.com/w3css/)
-
-4.04 Apr 2017 by Jan Egil and Borge Refsnes.
-
-w3.css is free to use. No license is necessary.
 

@@ -1,9 +1,0 @@
-# Here after are the "Baltekians" who have contributed to BALTEK (the rules):
-# https://github.com/LucasBorboleta/baltek-the-rules.
-# Use the following line format: first-name ... last-name ... <email address>
-
-Lucas Borboleta <lucas.borboleta@free.fr>
-Lucas Borboleta son A.
-Lucas Borboleta son C.
-Lucas Borboleta wife P.
-Lucas Borboleta colleague A.J.

@@ -38,7 +38,7 @@ Used works are listed in the [CREDITS](./docs/CREDITS.md) document.
 
 Changes regarding either the translations of the rules or the evolution of the rules are welcome; see the  [CONTRIBUTING](./docs/CONTRIBUTING.md) document.
 
-The past an present contributors are listed in the [CONTRIBUTORS](./docs/CONTRIBUTORS.md) document.
+The past and present contributors are listed in the [CONTRIBUTORS](./docs/CONTRIBUTORS.md) document.
 
 ## History
 

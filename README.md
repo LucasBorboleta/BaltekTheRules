@@ -25,7 +25,7 @@ The **atmosphere** of the matches is reminiscent of the game of **chess**.
 
 - In order to play the rules, either:
 
-  - handcraft yourself the game (it is really easy!),
+  - handcraft yourself the game (it is really easy; see [pictures](http://lucas.borboleta.blog.free.fr/public/Baltek/2016-01--Baltek-Prototype-2/Diaporama.htm)!),
   - play the HTML5/JavaScript implementation developed in the sister project [baltek-the-program](https://github.com/LucasBorboleta/baltek-the-program).
 
 ## License

@@ -51,7 +51,7 @@ Here is the organization of the files:
 * Links between files beneath the [packages](../pacakges) folder are always expressed using relative paths.
 * At the root of the project, the [index.html](../index.html) file launches the [baltek-the-rules](../pacakges/baltek-the-rules) package, thanks to a minimal amount of code.
 * The [tools](../tools) folder provides Python scripts for automation:
-  * [update-copyright-and-license-in-files.py](../tools/update-copyright-and-license-in-files.py) walks the project file and insert or update the copyright and license text. Some files and folders are excluded from this process. The updated files must provide special tagged lines matching the `license_begin_rule` and `license_end_rule`  (see the script).
+  * [update-files.py ](../tools/update-files.py)walks the project file and insert or update the copyright and license text. Some files and folders are excluded from this process. The updated files must provide special tagged lines matching the `license_begin_rule` and `license_end_rule`  (see the script). Also this script duplicates the [LICENSE](../docs/LICENSE.md) and [CONTRIBUTORS](../docs/CONTRIBUTORS.md) files at the root of the the [baltek-the-rules](../pacakges/baltek-the-rules) package.
 
 ## How do you test
 

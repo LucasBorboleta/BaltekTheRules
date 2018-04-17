@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 
-"""Insert or update the license and copyright text in the files of the project
+"""
+Automate the following tasks:
+1) Insert or update the license and copyright text in the files of the project.
+2) Copy the LICENSE and CONTRIBUTORS files at the root of the baltek-the-rules packages.
 """
 
 COPYRIGHT_AND_LICENSE = """
@@ -9,7 +12,7 @@ BALTEK-THE-RULES-LICENSE-BEGIN
 
 [![Creative Commons License](../packages/creative-commons/pictures/CC-BY-SA.png)](http://creativecommons.org/licenses/by-sa/4.0)
 
-BALTEK (the rules) describes a turn-based board game, inspired from football.
+BALTEK (the rules) describes a turn-based board game, inspired from football. 
 
 Copyright (C) 2017-2018 Lucas Borboleta ([lucas.borboleta@free.fr](mailto:lucas.borboleta@free.fr)) and Baltekians (see [CONTRIBUTORS.md](./CONTRIBUTORS.md) file at attributed URL).
 
@@ -21,12 +24,17 @@ BALTEK-THE-RULES-LICENSE-END
 
 import os
 import re
+import shutil
 import sys
 
 print
 print "Hello"
 
 project_home = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+
+baltek_the_rules_package_path = os.path.join(project_home, "packages", "baltek-the-rules")
+
+contributors_path = os.path.join(project_home, "docs", "CONTRIBUTORS.md")
 
 license_path = os.path.join(project_home, "docs", "LICENSE.md")
 license_stream = file(license_path, "rU")
@@ -139,6 +147,12 @@ if len(failed_file_paths) != 0:
     print "Update failed for the following files:"
     for file_path in failed_file_paths:
         print file_path
+
+for file_path in [license_path, contributors_path]:
+    shutil.copyfile(file_path, os.path.join(baltek_the_rules_package_path, os.path.basename(file_path)))
+    print
+    print "copying file '%s' in '%s' ..." % (file_path, baltek_the_rules_package_path)
+    print "copying file done"
 
 print
 print "Bye"

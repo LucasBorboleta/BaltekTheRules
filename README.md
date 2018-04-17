@@ -54,5 +54,8 @@ During year 2018, the project has been prepared for being ready for contribution
 
 The **separation** of **text rules** and **software implementation** aims at encouraging people either to play using handcrafted material or to develop their own program
 
+See also the [CHANGELOG](./docs/CHANGELOG.md).
 
+## Documentation
 
+All other documentation files can be found in the [docs](./docs) folder.

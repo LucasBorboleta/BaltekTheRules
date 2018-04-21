@@ -2,5 +2,5 @@
 
 ⚽🏃
 
-## (2018-04-17)
-- Added a change log file.
+## v1.1 (2018-04-21)
+- Prepared for contributing.

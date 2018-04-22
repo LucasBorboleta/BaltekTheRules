@@ -73,10 +73,10 @@ def convert_licence_lines_from_md_to_html(license_md_lines):
     newline_replacement = r' '
 
     image_rule = re.compile(r"!\[(?P<image_alt>[^\[\]]*)\]\((?P<image_src>[^\(\)]*)\)")
-    image_replacement = r'<img alt="\g<image_alt>" src="\g<image_src>">'
+    image_replacement = r'<img lang="en" alt="\g<image_alt>" src="\g<image_src>">'
 
     link_rule = re.compile(r"\[(?P<link_text>[^\[\]]*)\]\((?P<link_href>[^\(\)]*)\)")
-    link_replacement = r'<a target="_blank" href="\g<link_href>">\g<link_text></a>'
+    link_replacement = r'<a lang="en" target="_blank" href="\g<link_href>">\g<link_text></a>'
 
     package_path_rule = re.compile(r'"[./]+/packages/(?P<package_name>[^"]+)"')
     package_path_replacement = r'"../../../packages/\g<package_name>"'
@@ -106,7 +106,7 @@ def convert_licence_lines_from_md_to_html(license_md_lines):
             paragraph_text = package_path_rule.sub(package_path_replacement, paragraph_text)
             paragraph_text = local_path_rule.sub(local_path_replacement, paragraph_text)
 
-            paragraph_text = "<p>" + paragraph_text + "</p>\n"
+            paragraph_text = '<p lang="en" >' + paragraph_text + '</p>\n'
             license_html_lines.append(paragraph_text)
 
             paragraph_begin_found = False

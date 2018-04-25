@@ -32,7 +32,7 @@ project_home = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
 tmp_path = os.path.join(project_home, "tmp")
 
-log_path = os.path.join(tmp_path, os.path.basename(__file__) + ".txt")
+log_path = os.path.join(tmp_path, os.path.basename(__file__) + ".log.txt")
 sys.stdout = open(log_path, "w")
 sys.stderr = open(log_path, "w")
 

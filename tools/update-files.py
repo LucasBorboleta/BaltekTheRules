@@ -28,10 +28,16 @@ import re
 import shutil
 import sys
 
+project_home = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+
+tmp_path = os.path.join(project_home, "tmp")
+
+log_path = os.path.join(tmp_path, os.path.basename(__file__) + ".txt")
+sys.stdout = open(log_path, "w")
+sys.stderr = open(log_path, "w")
+
 print
 print "Hello"
-
-project_home = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
 baltek_the_rules_package_path = os.path.join(project_home, "packages", "baltek-the-rules")
 baltek_the_rules_package_html_path = os.path.join(baltek_the_rules_package_path, "html")

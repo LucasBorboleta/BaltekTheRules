@@ -2,7 +2,7 @@
 
 """
 Automate the following tasks:
-1) Copy the LICENSE.md,  CONTRIBUTORS.md and VERSION.txt files at the root of the baltek-the-rules packages.
+1) Copy the LICENSE.md,  CONTRIBUTORS.md and VERSION.txt files at the root of the baltek-the-rules package.
 2) Insert or update the license and copyright Markdown text in the files of the project (expected as comments).
 3) Insert or update a conversion to HTML of the Markdown in the rules HTML texts.
 """

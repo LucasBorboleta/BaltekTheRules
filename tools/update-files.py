@@ -34,7 +34,7 @@ tmp_path = os.path.join(project_home, "tmp")
 
 log_path = os.path.join(tmp_path, os.path.basename(__file__) + ".log.txt")
 sys.stdout = open(log_path, "w")
-sys.stderr = open(log_path, "w")
+sys.stderr = sys.stdout
 
 print
 print "Hello"

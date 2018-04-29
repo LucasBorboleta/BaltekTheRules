@@ -11,4 +11,3 @@ MIT License.
 4.04 Apr 2017 by Jan Egil and Borge Refsnes.
 
 w3.css is free to use. No license is necessary.
-

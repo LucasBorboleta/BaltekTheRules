@@ -3,8 +3,8 @@
 """
 Automate the following tasks:
 1) Copy the LICENSE.md,  CONTRIBUTORS.md and VERSION.txt files at the root of the baltek-the-rules package.
-2) Insert or update the license and copyright Markdown text in the files of the project (expected as comments).
-3) Insert or update a conversion to HTML of the Markdown in the rules HTML texts.
+2) In comments, insert or update the license & copyright Markdown text in the files of the project.
+3) In the rules HTML text, insert or update a conversion to HTML of the license & copyright Markdown text.
 """
 
 _COPYRIGHT_AND_LICENSE = """
@@ -17,9 +17,9 @@ BALTEK (the rules) describes a turn-based board game, inspired from football.
 
 Copyright (C) 2017-2018 Lucas Borboleta ([lucas.borboleta@free.fr](mailto:lucas.borboleta@free.fr)) and Baltekians (see [CONTRIBUTORS.md](./CONTRIBUTORS.md) file).
 
-This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit [http://creativecommons.org/licenses/by-sa/4.0](http://creativecommons.org/licenses/by-sa/4.0).
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <http://creativecommons.org/licenses/by-sa/4.0>.
 
-Attribute work to URL [https://github.com/LucasBorboleta/baltek-the-rules](https://github.com/LucasBorboleta/baltek-the-rules).
+Attribute work to URL <https://github.com/LucasBorboleta/baltek-the-rules>.
 BALTEK-THE-RULES-LICENSE-MD-END
 """
 
@@ -69,17 +69,21 @@ excluded_file_rules.append(re.compile(r"^.*\.png$"))
 excluded_file_rules.append(re.compile(r"^.*\.tmp$"))
 excluded_file_rules.append(re.compile(r"^.*\.txt$"))
 
-def convert_licence_lines_from_md_to_html(license_md_lines):
-    license_html_lines = list()
+def convert_lines_from_md_to_html(md_lines):
+    html_lines = list()
 
     empty_line_rule = re.compile(r"^\s*$")
-    h1_line_rule = re.compile(r"^#\s+\w*\s*$")
+
+    h1_line_rule = re.compile(r"^#\s+(?P<h1_title>.+)\s*$")
 
     newline_rule = re.compile(r"\n")
     newline_replacement = r' '
 
     image_rule = re.compile(r"!\[(?P<image_alt>[^\[\]]*)\]\((?P<image_src>[^\(\)]*)\)")
     image_replacement = r'<img lang="en" alt="\g<image_alt>" src="\g<image_src>">'
+
+    url_rule = re.compile(r"\<(?P<url_href>[^<>]+)\>")
+    url_replacement = r'[\g<url_href>](\g<url_href>)'
 
     link_rule = re.compile(r"\[(?P<link_text>[^\[\]]*)\]\((?P<link_href>[^\(\)]*)\)")
     link_replacement = r'<a lang="en" target="_blank" href="\g<link_href>">\g<link_text></a>'
@@ -95,37 +99,38 @@ def convert_licence_lines_from_md_to_html(license_md_lines):
     paragraph_text = ""
 
     # Add an empty line in order to treat the last paragraph like the previous ones.
-    for license_md_line in license_md_lines + ["\n"]:
-        if empty_line_rule.match(license_md_line):
+    for md_line in md_lines + ["\n"]:
+        if empty_line_rule.match(md_line):
             if paragraph_begin_found:
                 paragraph_end_found = True
-        elif h1_line_rule.match(license_md_line):
+        elif h1_line_rule.match(md_line):
             pass
         else:
             paragraph_begin_found = True
-            paragraph_text += license_md_line
+            paragraph_text += md_line
 
         if paragraph_begin_found and paragraph_end_found:
             paragraph_text = newline_rule.sub(newline_replacement, paragraph_text)
+            paragraph_text = url_rule.sub(url_replacement, paragraph_text)
             paragraph_text = image_rule.sub(image_replacement, paragraph_text)
             paragraph_text = link_rule.sub(link_replacement, paragraph_text)
             paragraph_text = package_path_rule.sub(package_path_replacement, paragraph_text)
             paragraph_text = local_path_rule.sub(local_path_replacement, paragraph_text)
 
             paragraph_text = '<p lang="en" >' + paragraph_text + '</p>\n'
-            license_html_lines.append(paragraph_text)
+            html_lines.append(paragraph_text)
 
             paragraph_begin_found = False
             paragraph_end_found = False
             paragraph_text = ""
 
-    return license_html_lines
+    return html_lines
 
 license_md_stream = file(license_md_path, "rU")
 license_md_lines = license_md_stream.readlines()
 license_md_stream.close()
 
-license_html_lines = convert_licence_lines_from_md_to_html(license_md_lines)
+license_html_lines = convert_lines_from_md_to_html(license_md_lines)
 
 file_paths = list()
 

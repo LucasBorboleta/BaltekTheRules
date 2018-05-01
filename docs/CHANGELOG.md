@@ -2,7 +2,7 @@
 
 ⚽🏃
 
-## v1.2 (2018-04-29)
+## v1.2 (2018-05-01)
 
 - Updated revisions section in the HTML texts.
 - HTML encoding moved before the big block of comments.

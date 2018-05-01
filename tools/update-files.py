@@ -23,6 +23,7 @@ Attribute work to URL <https://github.com/LucasBorboleta/baltek-the-rules>.
 BALTEK-THE-RULES-LICENSE-MD-END
 """
 
+import datetime
 import os
 import re
 import shutil
@@ -37,7 +38,7 @@ sys.stdout = open(log_path, "w")
 sys.stderr = sys.stdout
 
 print
-print "Hello"
+print "Hello " + datetime.datetime.now().isoformat()
 
 baltek_the_rules_package_path = os.path.join(project_home, "packages", "baltek-the-rules")
 baltek_the_rules_package_html_path = os.path.join(baltek_the_rules_package_path, "html")
@@ -92,7 +93,7 @@ def convert_lines_from_md_to_html(md_lines):
     package_path_replacement = r'"../../../packages/\g<package_name>"'
 
     local_path_rule = re.compile(r'"[.]/(?P<file_name>[^"]+)"')
-    local_path_replacement = r'"../\g<file_name>"'
+    local_path_replacement = r'"../../../packages/baltek-the-rules/\g<file_name>"'
 
     paragraph_begin_found = False
     paragraph_end_found = False
@@ -264,7 +265,7 @@ for file_path in [license_md_path, contributors_path, version_txt_path]:
     print "copying file done"
 
 print
-print "Bye"
+print "Bye " + datetime.datetime.now().isoformat()
 
 if len(failed_file_paths) == 0:
     sys.exit(0)

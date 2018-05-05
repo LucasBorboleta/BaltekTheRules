@@ -49,19 +49,22 @@ Here is the organization of the files:
 - The [README](../README.md) file is stored at the root of the project. All other documentation files ([LICENSE](./LICENSE.md), [CONTRIBUTING](./CONTRIBUTING.md)...) are stored in the [docs](./.) folder, itself located at the root of the project. These files are named with capitalized letters leading to words joined with `-` but not with `_`. Their extensions are either `.txt` or `.md`.
 - The main files are grouped and stored as packages in the [packages](../packages) folder. The present project is the [baltek-the-rules](../packages/baltek-the-rules) package. The other packages correspond to imported projects.
 - Beneath each package root, the following subfolders group the files according to their types: `html`, `css`, `js`, `pictures`. Going deeper, sub-subfolders might be created if they bring added value.
-- Links between files beneath the [packages](../packages) folder are always expressed using relative paths.
+- Links between files beneath the [packages](../packages) folder are always expressed using relative paths starting like `../../../packages/`.
 - At the root of the project, the [index.html](../index.html) file launches the [baltek-the-rules](../packages/baltek-the-rules) package, thanks to a minimal amount of code.
 - The [tools](../tools) folder provides Python scripts for automation:
 
-  - [update-files.py](../tools/update-files.py) walks the project file and insert or update the copyright and license text. Some files and folders are excluded from this process. The updated files must provide special tagged lines (see the script). Also this script duplicates the [LICENSE](../docs/LICENSE.md), [CONTRIBUTORS](../docs/CONTRIBUTORS.md) and [VERSION](../docs/VERSION.txt) files at the root of the [baltek-the-rules](../packages/baltek-the-rules) package.
+  - [update-files.py](../tools/update-files.py):
+    - It duplicates the [LICENSE](../docs/LICENSE.md), [CONTRIBUTORS](../docs/CONTRIBUTORS.md) and [VERSION](../docs/VERSION.txt) files at the root of the [baltek-the-rules](../packages/baltek-the-rules) package.
+    - For each selected file of the project (see the script), it updates the following items that are identified thanks to special tags (see the script):
+      - the license lines from the Markdown file.
 
 ## How do you test
 
 New and modified HTML files have to be tested manually as follows:
 
-- The [W3C HTML validator](https://validator.w3.org) checks the files without any error.
-- All hyperlinks are checked with success.
-- The files are readable using at least two browsers amongst Chrome, Firefox, Internet Explorer, Opera.
+- The [W3C HTML validator](https://validator.w3.org) must validate each file without any error.
+- All hyperlinks must be checked with success.
+- The files  must be readable using at least two browsers amongst Chrome, Firefox, Internet Explorer, Opera.
 - The files printed as PDF are readable.
 
 ## How do you register contributors

@@ -57,6 +57,7 @@ Here is the organization of the files:
     - It duplicates the [LICENSE](../docs/LICENSE.md), [CONTRIBUTORS](../docs/CONTRIBUTORS.md) and [VERSION](../docs/VERSION.txt) files at the root of the [baltek-the-rules](../packages/baltek-the-rules) package.
     - For each selected file of the project (see the script), it updates the following items that are identified thanks to special tags (see the script):
       - the license lines from the Markdown file.
+    - It generates a log file in `tmp` directory.
 
 ## How do you test
 

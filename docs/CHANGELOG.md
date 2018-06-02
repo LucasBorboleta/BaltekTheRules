@@ -2,6 +2,10 @@
 
 ⚽🏃
 
+## v1.3 (2018-06-02)
+
+* New style for the pages.
+
 ## v1.2 (2018-05-06)
 
 - In the HTML texts, the section about revisions has been updated.

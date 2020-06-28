@@ -13,8 +13,8 @@
 ## Modification des règles
 
 * Chaque joueur dispose de deux jetons bonus :
-  * Un réel bonus de sprint.
-  * Un faux bonus de sprint pour bluffer.
+  * Un jeton de sprint.
+  * Un jeton de bluff.
 * Toutes les manipulations de jetons de bonus sont gratuites, mais seules certaines manipulations sont autorisées lors d’un tour de jeu.
 * Un ou deux jetons de bonus sont manipulables lors d’un tour de jeu.
 * Cycle de vie d’un jeton de bonus:

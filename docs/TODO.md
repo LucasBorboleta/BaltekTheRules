@@ -12,7 +12,8 @@
 
 ## Modification des règles
 
-* Chaque joueur dispose de deux jetons bonus :
+* Introduire un nombre maximum de tours par partie à l'aide d'un compteur, comme dans une partie de football.
+* Chaque joueur dispose de deux jetons bonus de recto indiscernables  :
   * Un jeton de sprint.
   * Un jeton de bluff.
 * Toutes les manipulations de jetons de bonus sont gratuites, mais seules certaines manipulations sont autorisées lors d’un tour de jeu.
